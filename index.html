@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador Agroecológico: Cambio Climático y Cultivos - UNJu</title>
+    <title>Simulador de Opiniones y Perspectivas Climáticas - UNJu</title>
     <style>
         :root {
             --primary-color: #2e524a;
@@ -230,7 +230,7 @@
 
 <div class="container">
     <header>
-        <h1>Simulador Agroecológico: Cambio Climático y Cultivos</h1>
+        <h1>Simulador de Opiniones y Perspectivas Climáticas</h1>
         <p>Espacio de análisis reflexivo: Relacionando puntos de vista comunes con la dinámica agroecológica del IPCC AR6.</p>
         <span class="badge-ethics">Unidad 3: Ética y Sostenibilidad Ambiental</span>
     </header>
@@ -259,7 +259,7 @@
                 <label for="actionSlider">2. Compromiso y Acción Ambiental</label>
                 <div class="slider-container">
                     <input type="range" id="actionSlider" class="slider" min="1" max="3" step="1" value="2" oninput="updateDebate()">
-                    <span id="actionLabel" class="slider-value">Inacción (SSP5-8.5)</span>
+                    <span id="actionLabel" class="slider-value">Media</span>
                 </div>
             </div>
 
@@ -347,8 +347,8 @@
                 3: {
                     verdict: "🌱 REFLEXIÓN COMPARTIDA: LAS DECISIONES GENERAN CAMBIOS",
                     class: "confirmed",
-                    science: "Cuando se aplican acciones de mitigación globales y locales (SSP1-2.6), el termómetro responde estabilizándose cerca de los +1.5°C. Esto pone de manifiesto que las temperaturas están ligadas a nuestras acciones y decisiones productivas cotidianas.",
-                    ethics: "Asumir nuestro rol activo nos permite proyectar la práctica agronómica con mayor previsión, organizando el uso del suelo y el agua con responsibility para cuidar las cuencas de la provincia."
+                    science: "Cuando se aplican acciones de mitigación globales y locales (SSP1-2.6), el termómetro responde estabilizándose cerca de los +1.5°C. Esto pone de manifiesto que las temperaturas están ligadas a nuestras actions y decisiones productivas cotidianas.",
+                    ethics: "Asumir nuestro rol activo nos permite proyectar la práctica agronómica con mayor previsión, organizando el uso del suelo y el agua con responsabilidad para cuidar las cuencas de la provincia."
                 }
             }
         },
@@ -369,5 +369,123 @@
                     ethics: "Aunque parezca un tema distante, las dinámicas ambientales moldean la rentabilidad del sector. El diseño de soluciones sustentables requiere que nos involucremos activamente desde la formación universitaria para proteger la seguridad alimentaria regional."
                 },
                 3: {
-                    verdict: "🌟 EL COMP
-                 
+                    verdict: "🌟 EL COMPROMISO CONSTRUYE SOLUCIONES LOCALES",
+                    class: "confirmed",
+                    science: "El escenario sostenible (SSP1-2.6) demuestra que la atención temprana a estas variables permite estabilizar los entornos productivos, facilitando cosechas más previsibles y protegiendo los recursos naturales de los que dependemos todos.",
+                    ethics: "Al superar la indiferencia, entendemos que la sostenibilidad ambiental es parte de nuestra identidad profesional. Participar activamente nos conecta con las necesidades reales de la comunidad y con la conservación del territorio."
+                }
+            }
+        },
+        co2: {
+            title: "Perspectiva del CO2 como Estímulo",
+            mythText: "Plantea que, dado que las plantas asimilan el dióxido de carbono para su crecimiento, un incremento en su concentración ambiental podría resultar favorable para la producción agrícola.",
+            actions: {
+                1: {
+                    verdict: "🛑 INTERACCIÓN LIMITADA POR FACTORES EXTREMOS",
+                    class: "debunked",
+                    science: "Los modelos del IPCC advierten que en escenarios de alta emisión, el calor extremo (+3.5°C a 4°C) anula los beneficios del CO2. Cultivos locales como el poroto sufren deshidratación de polen y aborto floral, mientras que la caña de azúcar (C4) no aprovecha el excedente por su propia estructura fisiológica.",
+                    ethics: "Analizar una sola variable en forma aislada puede llevarnos a conclusiones incompletas. Una mirada agronómica integral nos invita a observar el ecosistema completo para asegurar que el sistema productivo sea viable."
+                },
+                2: {
+                    verdict: "🌾 EQUILIBRIO COMPLEJO: CAMBIOS EN LA CALIDAD",
+                    class: "conflict",
+                    science: "En el escenario medio (SSP2-4.5), algunas plantas pueden aumentar su masa foliar, pero las investigaciones indican que los alimentos tienden a disminuir su concentración de proteínas y minerales esenciales. Paralelamente, las temperaturas elevadas favorecen la presión de plagas.",
+                    ethics: "Aparece un dilema técnico y social: priorizar solo el volumen físico puede comprometer el valor nutricional de los alimentos, afectando la calidad de los productos destinados al consumo de las comunidades."
+                },
+                3: {
+                    verdict: "🌳 MANEJO INTEGRAL Y ESTABILIDAD",
+                    class: "confirmed",
+                    science: "Con emisiones controladas (SSP1-2.6), el clima se mantiene estable. Las respuestas del cultivo vuelven a depender de las buenas prácticas agronómicas (salud del suelo, rotaciones y biodiversidad) en lugar de verse afectadas por extremos térmicos.",
+                    ethics: "Se consolida un enfoque enfocado en el equilibrio. La producción se sostiene a lo largo del tiempo respetando la capacidad de los recursos y asegurando un entorno saludable para las futuras generaciones."
+                }
+            }
+        },
+        tecnologia: {
+            title: "Perspectiva del Apoyo Tecnológico",
+            mythText: "Confía en que los avances de la ingeniería agrícola (riego de precisión, biotecnología y mejoras en insumos) serán suficientes para resolver las variaciones del entorno sin modificar los esquemas productivos vigentes.",
+            actions: {
+                1: {
+                    verdict: "⚠️ LIMITACIONES FÍSICAS DE LAS HERRAMIENTAS",
+                    class: "debunked",
+                    science: "El IPCC resalta que la adaptación posee límites físicos reales. Ante calentamientos muy marcados (>4.0°C), las fuentes de agua profunda reducen su recarga por la falta de nieve en las altas cumbres, haciendo inviables los sistemas de riego por la falta del recurso base.",
+                    ethics: "La confianza exclusiva en la tecnología puede acentuar brechas socioeconómicas, ya que las herramientas avanzadas suelen requerir altas inversiones, dejando en una posición de mayor riesgo a los pequeños productores minifundistas."
+                },
+                2: {
+                    verdict: "💰 EVOLUCIÓN DE COSTOS Y DEPENDENCIA DE INSUMOS",
+                    class: "conflict",
+                    science: "En trayectorias intermedias (SSP2-4.5), la tecnología ayuda a mitigar las pérdidas, pero eleva los costos de producción por hectárea (energía para bombeo, patentes de semillas), incrementando la dependencia de recursos externos.",
+                    ethics: "Actuar respondiendo solo a las consecuencias inmediatas funciona como un alivio temporal, pero no resuelve las causas de fondo de la degradación del suelo o el agua, un desafío que heredarán los futuros profesionales."
+                },
+                3: {
+                    verdict: "🛠️ COADAPTACIÓN Y TECNOLOGÍA APROPIADA",
+                    class: "confirmed",
+                    science: "Bajo un marco de mitigación (SSP1-2.6), las herramientas técnicas se integran para acompañar los ciclos biológicos naturales (alertas climáticas, conservación de humedad), resultando altamente eficientes al no verse sobrepasadas por extremos severos.",
+                    ethics: "La innovación se orienta hacia el beneficio común y el cuidado del entorno. La tecnología se convierte en un puente para adaptarnos con respeto a las capacidades del ecosistema, democratizando su acceso."
+                }
+            }
+        },
+        derrotismo: {
+            title: "Perspectiva de la Magnitud Global",
+            mythText: "Expresa que, debido a la escala planetaria de las variaciones ambientales, las pequeñas acciones de una finca, una comunidad o una universidad resultan insuficientes para generar un cambio real.",
+            actions: {
+                1: {
+                    verdict: "💪 EL VALOR DE LAS ACCIONES SUMADAS",
+                    class: "debunked",
+                    science: "Los modelos matemáticos del IPCC muestran que cada pequeña reducción en la trayectoria de calentamiento disminuye de forma directa la frecuencia de eventos climáticos extremos. Las decisiones locales actuales mitigan los escenarios de riesgo futuros.",
+                    ethics: "Asumir que las acciones locales no cuentan puede desmotivarnos. La perspectiva ética nos impulsa a buscar alternativas desde nuestro lugar de estudio y trabajo, fortaleciendo el tejido social y la resiliencia comunitaria."
+                },
+                2: {
+                    verdict: "⏳ RELEVANCIA DE LA INTERVENCIÓN PREVENTIVA",
+                    class: "conflict",
+                    science: "En el camino intermedio (SSP2-4.5), las acciones de conservación (como cubiertas vegetales o manejo integrado) determinan si los suelos de la región mantendrán su fertilidad o sufrirán procesos acelerados de erosión.",
+                    ethics: "Como futuros profesionales de las ciencias agrarias, nuestro conocimiento científico adquiere valor cuando se convierte en propuestas prácticas de adaptación que acompañan y sostienen el esfuerzo de quienes trabajan la tierra."
+                },
+                3: {
+                    verdict: "🌟 RECONOCIMIENTO DEL CAMBIO COLECTIVO COORDINADO",
+                    class: "confirmed",
+                    science: "El éxito del escenario de sostenibilidad (SSP1-2.6) evidencia que la articulación de esfuerzos globales y locales (reforestación, protección de cuencas) estabiliza el sistema de manera efectiva, demostrando el impacto real de la acción conjunta.",
+                    ethics: "Se pone de relieve el valor del trabajo en comunidad. Comprobar que el manejo sustentable genera cambios positivos devuelve la confianza en la capacidad de transformar nuestra realidad y promover la justicia ambiental."
+                }
+            }
+        }
+    };
+
+    function updateDebate() {
+        const myth = document.getElementById('mythSelect').value;
+        const actionVal = parseInt(document.getElementById('actionSlider').value);
+        const labelEl = document.getElementById('actionLabel');
+        const verdictEl = document.getElementById('verdictBox');
+
+        let labelText = "";
+        let dbActionIndex = 1;
+
+        if (actionVal === 1) {
+            labelText = "Baja";
+            dbActionIndex = 1;
+        } else if (actionVal === 2) {
+            labelText = "Media";
+            dbActionIndex = 2;
+        } else {
+            labelText = "Alta";
+            dbActionIndex = 3;
+        }
+        labelEl.innerText = labelText;
+
+        const currentData = debateData[myth];
+        const scenarioResponse = currentData.actions[dbActionIndex];
+
+        document.getElementById('textMyth').innerText = currentData.mythText;
+        document.getElementById('textScience').innerText = scenarioResponse.science;
+        document.getElementById('textEthics').innerText = scenarioResponse.ethics;
+
+        verdictEl.innerText = scenarioResponse.verdict;
+        verdictEl.className = `verdict-box verdict-${scenarioResponse.class}`;
+    }
+
+    window.onload = function() {
+        updateDebate();
+    };
+</script>
+
+</body>
+</html>
